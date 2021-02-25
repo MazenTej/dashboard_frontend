@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+#sidebar-wrapper {
+  z-index: 1;
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  background: rgb(245, 245, 245);
+  margin-top: 60px;
+  border-right: 2px solid rgb(224, 216, 216);
+}
+.sidebar-nav {
+  padding: 0;
+  list-style: none;
+}
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 40px;
+}
+
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-family: "RocknRoll One", sans-serif;
+}
+
+.sidebar-nav li a:hover {
+  background: rgb(105, 163, 238);
+}
+.logout {
+  font-family: "RocknRoll One", sans-serif;
+  margin-left: 8px;
+}
+.logout-container:hover {
+  background: rgb(105, 163, 238);
+  cursor: pointer;
+}
+
+.avatar {
+  font-family: "RocknRoll One", sans-serif;
+}
