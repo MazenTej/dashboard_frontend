@@ -48,12 +48,12 @@ const Settings = () => {
     }
   }, [viewId]);
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setPay(viewId);
-  //     dispatch({ type: "SET_VIEW", payload: pay });
-  //   }, 8000);
-  // }, [viewId]);
+   useEffect(() => {
+     setTimeout(() => {
+      setPay(viewId);
+      dispatch({ type: "SET_VIEW", payload: pay });
+     }, 8000);
+  }, [viewId]);
 
   return (
     <div style={{ position: "fixed", top: "50%", left: "50%" }}>
