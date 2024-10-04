@@ -1,72 +1,55 @@
-Look at Dashbaord Analytics.pdf for an overview of the app
+# Dashboard Analytics
 
-# Getting Started with Create React App
+## Overview
+This **Dashboard Analytics** project is a full-stack web application designed to display various traffic metrics such as organic traffic, global traffic, and device types for a specified period. The app features user authentication, dynamic chart generation, and the ability to export data as Excel sheets. It is built using **React** for the frontend and **Node.js** for the backend, with data stored in **MongoDB**. The dashboard fetches traffic data through the **Google Analytics API**.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Key Features
 
-## Available Scripts
+- **User Authentication**: Secure login and registration system using **JWT** and **bcryptjs** for password hashing.
+- **Date Range Picker**: Select a specific date range for the traffic data.
+- **Dynamic Charts**: View charts that show organic traffic, global traffic, and device types based on the selected date range.
+  - **Chart Dimensions**: Charts can be viewed by day, month, or year.
+- **Data Export**: Export data as an Excel file for offline analysis.
+- **Responsive UI**: Built with **React Bootstrap** for a modern, responsive design.
+- **Logout and Avatar**: A user-friendly avatar and logout feature for secure session management.
 
-In the project directory, you can run:
+## Technologies Used
 
-### `npm start`
+### Backend
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Node.js**: Server-side framework to set up the backend.
+- **MongoDB**: NoSQL database for user and application data.
+- **Postman**: Used for testing API routes.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#### NPM Packages
+- **express**: Manages routing and request handling.
+- **mongoose**: Interacts with the MongoDB database.
+- **validator**: Input validation for registration and login forms.
+- **jsonwebtoken (JWT)**: Manages authorization with JSON Web Tokens.
+- **passport & passport-jwt**: Authentication middleware with JWT strategy.
+- **bcryptjs**: Hashes passwords for secure storage.
+- **concurrently**: Allows the backend and frontend to run simultaneously on different ports.
 
-### `npm test`
+### Frontend
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React**: JavaScript library for building the user interface.
+- **Redux**: State management for handling application state across components.
+- **axios**: HTTP client for making API requests to the backend.
 
-### `npm run build`
+#### Frontend Libraries and NPM Packages
+- **classnames**: Dynamically apply CSS classes in JSX.
+- **react-redux**: Connects React components to the Redux store.
+- **react-router-dom**: Handles client-side routing.
+- **redux-thunk**: Middleware for asynchronous Redux actions.
+- **react-bootstrap / bootstrap / rsuite**: UI components and styles.
+- **date-fns / react-date-range**: Provides date range picking functionalities.
+- **react-data-export / xlsx / file-saver**: Enables data export to Excel files.
+- **react-use-analytics-api**: Used to fetch data from the Google Analytics API.
+- **react-use-animations**: Animations for the loading states.
+- **react-avatar**: Avatar component for user profiles.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## How to Run the App
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/username/dashboard-analytics.git
